@@ -1,0 +1,18 @@
+{
+  "root": "dist",
+  "clean_urls": true,
+  "routes": {
+    "/**": "index.html"
+  },
+  "headers": {
+    "/**/*.js": {
+      "Content-Type": "application/javascript"
+    },
+    "/**/*.mjs": {
+      "Content-Type": "application/javascript"
+    },
+    "/**/*.css": {
+      "Content-Type": "text/css"
+    }
+  }
+}

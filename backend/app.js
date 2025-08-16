@@ -6,10 +6,9 @@ import noteRoute from './routes/noteRoute.js'
 const app = express()
 
 app.use(cors({
-    origin : 'http://localhost:3000/'
+    origin: ['http://localhost:3000', 'https://authtest-1.onrender.com/']
 }))
 app.use('/notes', noteRoute)
-
 
 app.get('/', (req, res) => {
     res.send("home page")
